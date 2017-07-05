@@ -1,0 +1,34 @@
+<!-- CSS-id-class.html -->
+<!DOCTYPE html>
+  <html language="fr">
+  <head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-sclae=1">
+    <title></title>
+    <link href="vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="vendor/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="javascriptexobonus.css">
+
+  </head>
+  <body>
+    <input type="number" id="number1" onchange="
+              // .value pour attraper la valeur
+              // parseInt car la valeur d’un input est vu
+              // comme du texte. parseInt en fait un nombre
+              // % (alias « modulo ») est le reste d’une division
+              // .innerHTML : avec deux n seulement
+              if(parseInt(number1.value)%2==0) {
+                      result.innerHTML = 'pair';
+              }
+              else {
+                      result.innerHTML = 'impair';
+              }">
+    <div id="result"></div>
+    
+    <script src="JS/script.js"></script>
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendor/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+  </html>

@@ -1,0 +1,44 @@
+<!-- CSS-id-class.html -->
+<!DOCTYPE html>
+  <html language="fr">
+  <head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-sclae=1">
+    <title></title>
+    <link href="vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="vendor/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="javascriptexofibonacci.css">
+
+  </head>
+  <body>
+
+
+    <script type="text/javascript" language="javascript">
+    function Fibonacci(n) {
+       var w;
+       if(n <= 0) return 0;
+       if(n == 1) return 1;
+       var u = 0;
+       var v = 1;
+       for(var i=2; i <= n; i++) {
+           w = u+v;
+           u = v;
+           v = w;
+       };
+       return v;
+    }
+
+    for(var I=0;I<=20;I++) {
+        document.write("Fibonacci("+I+")="+Fibonacci(I)+"<BR>");
+    }
+    </script>
+
+
+
+    <script src="JS/script.js"></script>
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendor/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+  </html>

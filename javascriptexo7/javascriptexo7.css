@@ -1,0 +1,10 @@
+div:nth-child(odd) {
+  background: blue;
+}
+div:nth-child(even){
+  background: red;
+}
+div {
+  width: 100px;
+  height: 100px;
+}

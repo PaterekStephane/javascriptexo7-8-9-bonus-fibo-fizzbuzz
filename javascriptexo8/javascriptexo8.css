@@ -1,0 +1,13 @@
+#color {
+  background-color: navy;
+  height: 300px;
+  text-align: center;
+}
+
+#firstname,
+#lastname,
+#age,
+#adr,
+button {
+  margin-top: 20px;
+}
